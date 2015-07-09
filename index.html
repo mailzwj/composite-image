@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5图片合成器</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div class="can-box" id="J_CanBox">
+        <canvas class="tar-canvas" id="J_Target" width="800" height="400"></canvas>
+    </div>
+    <div class="sou-box">
+        <ul class="sou-list" id="J_SouList">
+            <li class="item">
+                <img src="./sources/shu.png">
+            </li>
+            <li class="item">
+                <img src="./sources/niu.png">
+            </li>
+            <li class="item">
+                <img src="./sources/hu.png">
+            </li>
+            <li class="item">
+                <img src="./sources/tu.png">
+            </li>
+            <li class="item">
+                <img src="./sources/long.png">
+            </li>
+            <li class="item">
+                <img src="./sources/she.png">
+            </li>
+            <li class="item">
+                <img src="./sources/ma.png">
+            </li>
+            <li class="item">
+                <img src="./sources/yang.png">
+            </li>
+            <li class="item">
+                <img src="./sources/hou.png">
+            </li>
+            <li class="item">
+                <img src="./sources/ji.png">
+            </li>
+            <li class="item">
+                <img src="./sources/gou.png">
+            </li>
+            <li class="item">
+                <img src="./sources/zhu.png">
+            </li>
+        </ul>
+    </div>
+    <div class="get-img" id="J_GetImage">
+        合成图片
+    </div>
+    <div class="new-img" id="J_NewImage"></div>
+    <div class="help" id="J_Help">
+        <span class="icon-help">帮助</span>
+        <div class="help-cont">
+            1、点击图片素材列表，选择素材<br>
+            2、拖动素材调整素材在画布中的位置<br>
+            3、可点击“删除”按钮，删除素材<br>
+            4、点击“合成图片”按钮，生成图片<br>
+            5、鼠标右键-图片另存为...<br>
+            6、生成后，可再次拖动素材，重新编辑
+        </div>
+    </div>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
