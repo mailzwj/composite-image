@@ -5,6 +5,7 @@
         downImg = document.getElementById('J_DownImg'),
         spCss = document.getElementById('J_SpCss'),
         cvs = document.getElementById('J_SpCanvas'),
+        dDom = document.getElementById('J_ForDown'),
         ctx = cvs.getContext('2d'),
         picCount = 0,
         space = 10,
@@ -99,7 +100,8 @@
                 if (console) {
                     console.log('Download start.');
                 }
-                window.open('http://www.seejs.com/demos/preview/cimg/api/download.php?source=' + xhr.responseText);
+                // window.open('http://www.seejs.com/demos/preview/cimg/api/download.php?source=' + xhr.responseText);
+                dDom.src = 'http://www.seejs.com/demos/preview/cimg/api/download.php?source=' + xhr.responseText;
             }
         };
         xhr.open('POST', 'http://www.seejs.com/demos/preview/cimg/api/save.php');
