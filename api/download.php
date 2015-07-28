@@ -3,6 +3,7 @@
         $file = $_GET["source"];
         $rs = preg_match("/^\.\.\/download\/sprite\.(png|css)$/", $file, $matches);
         if (!$rs) {
+            header('Content-type: text/html;charset=utf-8');
             echo "非法的资源路径，请检查！";
             exit;
         }
